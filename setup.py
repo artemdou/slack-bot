@@ -7,10 +7,11 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='slack-bot',
+    name='bot',
     version='1.0',
     description='A useful module',
+    url='https://github.com/artemdou/slack-bot',
     author='artemdou',
-    packages=['bot']
+    packages=['bot', '*.bot', 'bot.*', '*.bot.*']
     # packages=find_packages(include=['dynamic_data_helper', 'dynamic_data_helper.*', 'bot', 'slack_bot.*']),
 )
