@@ -12,6 +12,6 @@ setup(
     description='A useful module',
     url='https://github.com/artemdou/slack-bot',
     author='artemdou',
-    packages=['bot', '*.bot', 'bot.*', '*.bot.*']
-    # packages=find_packages(include=['dynamic_data_helper', 'dynamic_data_helper.*', 'bot', 'slack_bot.*']),
+    # packages=['bot', '*.bot', 'bot.*', '*.bot.*']
+    packages=find_packages(include=['bot', '*.bot', 'bot.*', '*.bot.*']),
 )
